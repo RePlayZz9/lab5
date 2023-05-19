@@ -1,0 +1,102 @@
+.traffic-light {
+    width: 80px;
+    height: 200px;
+    background-color: black;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .light {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    animation: blink 1s linear infinite;
+  }
+  
+  .red {
+    top: 20px;
+    background-color: red;
+    animation-name: red-blink;
+  }
+  
+  .yellow {
+    top: 90px;
+    background-color: yellow;
+    animation-name: yellow-blink;
+  }
+  
+  .green {
+    top: 160px;
+    background-color: green;
+    animation-name: green-blink;
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0.5;
+    }
+  }
+  
+  @keyframes red-blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes yellow-blink {
+    0% {
+      opacity: 0.5;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
+  
+  @keyframes green-blink {
+    0% {
+      opacity: 0.5;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  .road {
+    width: 100%;
+    height: 200px;
+    background-color: gray;
+    position: relative;
+  }
+  
+  .car {
+    width: 60px;
+    height: 30px;
+    background-color: blue;
+    position: absolute;
+    top: 85px;
+    left: -60px;
+    animation: drive 5s linear infinite;
+  }
+  
+  @keyframes drive {
+    0% {
+      left: -60px;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  

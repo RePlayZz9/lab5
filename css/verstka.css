@@ -1,0 +1,45 @@
+body{
+    background-image: url(../img/Rectangle\ 6.png);
+}
+.navbar{
+    width: 100%;
+    height: 65px;
+}
+.navbar .container{
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar_menu{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.navbar_menu li{
+    display: inline-block;
+}
+.navbar_menu li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+.navbar-wrap{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.contact{
+    margin-left: 30px;
+    padding: 10px;
+}
+.main1{
+    display: flex;
+    justify-content: center;
+    padding-top: 340px;
+}
+.main1 h1{
+    font-size: 50px;
+}
